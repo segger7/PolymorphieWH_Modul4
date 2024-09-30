@@ -1,11 +1,12 @@
+import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
 public class AufgabeMitDeadline extends Aufgabe{
 
     private GregorianCalendar deadline;
 
-    public AufgabeMitDeadline(String aufgabentext, GregorianCalendar datumErstellung, GregorianCalendar deadline) {
-        super(aufgabentext, datumErstellung);
+    public AufgabeMitDeadline(String aufgabentext, GregorianCalendar deadline) {
+        super(aufgabentext);
         setDeadline(deadline);
     }
 
@@ -19,6 +20,7 @@ public class AufgabeMitDeadline extends Aufgabe{
 
     @Override
     public String toString() {
-        return "[Aufgabe: "+ this.getAufgabentext() +"; Erstellt am: "+ this.getDatumErstellung().toString() +"; Deadline: "+ this.getDeadline().toString()+"]";
+        SimpleDateFormat formatieren = new SimpleDateFormat();
+        return "[Aufgabe: "+ this.getAufgabentext() +"; Erstellt am: "+ formatieren.format(getDatumErstellung().getTime()) +"; Deadline: "+ formatieren.format(this.getDeadline().getTime())+"]";
     }
 }

@@ -1,13 +1,15 @@
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.GregorianCalendar;
 
 public class Aufgabe {
 
     private String aufgabentext;
-    private GregorianCalendar datumErstellung;
+    private final GregorianCalendar datumErstellung;
 
-    public Aufgabe(String aufgabentext, GregorianCalendar datumErstellung) {
+    public Aufgabe(String aufgabentext) {
         setAufgabentext(aufgabentext);
-        setDatumErstellung(datumErstellung);
+        datumErstellung = new GregorianCalendar();
     }
 
     public String getAufgabentext() {
@@ -22,12 +24,9 @@ public class Aufgabe {
         return datumErstellung;
     }
 
-    public void setDatumErstellung(GregorianCalendar datumErstellung) {
-        this.datumErstellung = datumErstellung;
-    }
-
     @Override
     public String toString() {
-        return "[Aufgabe: "+ aufgabentext +"; Erstellt am: "+ datumErstellung.toString() +"]";
+        SimpleDateFormat formatieren = new SimpleDateFormat();
+        return "[Aufgabe: "+ aufgabentext +"; Erstellt am: "+ formatieren.format(datumErstellung.getTime()) +"]";
     }
 }
