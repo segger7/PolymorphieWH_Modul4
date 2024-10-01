@@ -45,7 +45,7 @@ public class Aufgabenliste {
         for(Aufgabe a : aufgabenList) {
             if(a instanceof AufgabeMitDeadline) {
                 if(((AufgabeMitDeadline) a).getDeadline().before(new GregorianCalendar())) {
-                    System.out.println("[Aufgabe: "+ a.getAufgabentext().toUpperCase() +"; Erstellt am: "+ a.getDatumErstellung().toString() +"; *!* Deadline: "+ ((AufgabeMitDeadline) a).getDeadline().toString()+" !!!]");
+                    System.out.println("(!) ÜBERFALLIG " + a);
                     System.out.println("-------------------------------------------------------");
                 } else {
                     System.out.println(a);

@@ -49,10 +49,10 @@ public class App {
                     System.out.println("Tag: ");
                     int eingabeTag= scanner.nextInt();
                     System.out.println("Monat: ");
-                    int eingabeMonat = scanner.nextInt();
+                    int eingabeMonat = scanner.nextInt() -1;
                     System.out.println("Jahr: ");
                     int eingabeJahr = scanner.nextInt();
-                    aufgabenListe.addAufgabe(new AufgabeMitDeadline(eingabeTitel4b,new GregorianCalendar(eingabeJahr, eingabeMonat, eingabeJahr)));
+                    aufgabenListe.addAufgabe(new AufgabeMitDeadline(eingabeTitel4b,new GregorianCalendar(eingabeJahr, eingabeMonat, eingabeTag)));
                     break;
 
                 case "5":
