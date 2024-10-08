@@ -23,9 +23,13 @@ public class Aufgabenliste {
     }
 
     public void alleAufgabenAusgeben() {
-        for(Aufgabe a : aufgabenList) {
-            System.out.println(a);
-            System.out.println("-------------------------------------------------------");
+        if(!aufgabenList.isEmpty()) {
+            for(Aufgabe a : aufgabenList) {
+                System.out.println(a);
+                System.out.println("-------------------------------------------------------");
+            }
+        } else {
+            System.out.println("Keine Aufgaben in Liste vorhanden!");
         }
     }
 

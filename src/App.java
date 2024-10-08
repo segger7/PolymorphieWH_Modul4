@@ -66,6 +66,10 @@ public class App {
                     System.out.println("Programm beendet");
                     break;
 
+                default:
+                    System.out.println("Richtige Eingabe tätigen!");
+                    break;
+
             }
         }
     }
