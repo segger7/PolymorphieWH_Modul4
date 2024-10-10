@@ -28,3 +28,32 @@ Man kann verschiedene Eingaben (Die mit einem Scanner eingelesen werden) treffen
 
 5. Aufgabe als erledigt markieren. Hier gibt man einen Index vom Typ int ein, der dann den jeweiligen Index Eintrag aus der Liste löscht.
 6. (x) mit Eingabe eines x wird das Programm beendet
+
+### Fragen für das Lerntagebuch
+
+1. Was habe ich im Rahmen der Lernaufgabe gelernt (Lernertrag)?
+
+Mir waren grundsätzlich alle Konzepte schon vorher bekannt aber ich habe durch
+die Aufgabe die Konzepte nochmal wiederholen können und habe das erste Mal die Klasse
+GregorianCalendar benutzt.
+
+2. Was habe ich noch überhaupt nicht verstanden?
+
+Ich habe alles verstanden.
+
+3. Was ich dazugelernt habe und jetzt besser kann:
+
+Ich kann alles gleich gut wie davor.
+
+4. !Ungültiger Link! zur Fragestellung
+
+Ich kann diese Frage nicht beantworten da ein Ungültiger Link in der Fragestellung vorkommt.
+
+5. !Ungültiger Link! zur Fragestellung
+
+Ich kann diese Frage nicht beantworten da ein Ungültiger Link in der Fragestellung vorkommt.
+
+6. Wie wird es weitergehen?
+
+Ich denke das ich alles von dieser Aufgabe sehr gut
+verstanden habe.
